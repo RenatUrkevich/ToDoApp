@@ -1,0 +1,33 @@
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.span{
+    margin-left: 1rem;
+
+  }
+
+.note-exit-active{
+    animation: note 700ms ease-out forwards;
+}
+
+.note-enter-active{
+    animation: note 700ms ease-in alternate-reverse;
+}
+
+@keyframes note{
+    0%{
+        transform: translateX(0);
+    }
+    30%{
+        opacity: .7;
+        transform: translateX(30px);
+    }
+    100%{
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+}
+
